@@ -1,18 +1,20 @@
-<Compendium>
-    <Items>
-        <Item>
-            <id>quiver-of-ethereal-trespass</id>
-            <name>Quiver of Ethereal Trespass</name>
-            <type>Wondrous Item</type>
-            <magic>true</magic>
-            <attunement>requires attunement</attunement>
-            <rarity>Legendary</rarity>
-            <description>This shimmering purple glass quiver levitates when placed against the body. It grants immunity to banishment, produces infinite ammunition, and the first attack each turn from this quiver deals an extra 1d12 force damage. Once per dawn, it can cast blink or dimension door without expending a spell slot.</description>
-            <property name="Infinite Ammunition">The quiver generates one piece of ammunition whenever its wielder reaches in to draw an arrow or bolt.</property>
-            <property name="Forceful Strike">The first attack on each of the wielder's turns that hits deals an additional 1d12 force damage.</property>
-            <property name="Ethereal Maneuverability">Allows casting of blink or dimension door once per dawn. Casting blink allows the wielder to see and attack into the Ethereal Plane.</property>
-            <spell name="blink" level="3" recharge="dawn"/>
-            <spell name="dimension door" level="4" recharge="dawn"/>
-        </Item>
-    </Items>
-</Compendium>
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<element name="Quiver of Ethereal Trespass" type="Magic Item" source="Custom Content" id="ID_CUSTOM_ITEM_QUIVER_OF_ETHEREAL_TRESPASS">
+		<description>
+			<p>This shimmering purple glass quiver levitates when placed against the body. It grants immunity to banishment, produces infinite ammunition, and the first attack each turn from this quiver deals an extra 1d12 force damage. Once per dawn, it can cast blink or dimension door without expending a spell slot.</p>
+			<p class="indent">The quiver generates one piece of ammunition whenever its wielder reaches in to draw an arrow or bolt.</p>
+			<p class="indent">The first attack on each of the wielder's turns that hits deals an additional 1d12 force damage.</p>
+			<p class="indent">Allows casting of blink or dimension door once per dawn. Casting blink allows the wielder to see and attack into the Ethereal Plane.</p>
+		</description>
+		<setters>
+			<set name="keywords">quiver</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="quiver">Wondrous Item</set>
+			<set name="rarity">Legendary</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+</elements>
+
