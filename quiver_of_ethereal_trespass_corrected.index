@@ -1,25 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Items>
-    <Item>
-        <Name>Quiver of Ethereal Trespass</Name>
-        <Type>Wondrous Item</Type>
-        <Magic>true</Magic>
-        <AttunementRequired>true</AttunementRequired>
-        <Rarity>Legendary</Rarity>
-        <Description>This shimmering purple glass quiver levitates when placed against the body. It grants immunity to banishment, produces infinite ammunition, and the first attack each turn from this quiver deals an extra 1d12 force damage. Once per dawn, it can cast blink or dimension door without expending a spell slot.</Description>
-        <Properties>
-            <Property>
-                <Name>Infinite Ammunition</Name>
-                <Text>The quiver generates one piece of ammunition whenever its wielder reaches in to draw an arrow or bolt.</Text>
-            </Property>
-            <Property>
-                <Name>Forceful Strike</Name>
-                <Text>The first attack on each of the wielder's turns that hits deals an additional 1d12 force damage.</Text>
-            </Property>
-            <Property>
-                <Name>Ethereal Maneuverability</Name>
-                <Text>Allows casting of blink or dimension door once per dawn. Casting blink allows the wielder to see and attack into the Ethereal Plane.</Text>
-            </Property>
-        </Properties>
-    </Item>
-</Items>
+<Compendium>
+    <Items>
+        <Item>
+            <id>quiver-of-ethereal-trespass</id>
+            <name>Quiver of Ethereal Trespass</name>
+            <type>Wondrous Item</type>
+            <magic>true</magic>
+            <attunement>requires attunement</attunement>
+            <rarity>Legendary</rarity>
+            <description>This shimmering purple glass quiver levitates when placed against the body. It grants immunity to banishment, produces infinite ammunition, and the first attack each turn from this quiver deals an extra 1d12 force damage. Once per dawn, it can cast blink or dimension door without expending a spell slot.</description>
+            <property name="Infinite Ammunition">The quiver generates one piece of ammunition whenever its wielder reaches in to draw an arrow or bolt.</property>
+            <property name="Forceful Strike">The first attack on each of the wielder's turns that hits deals an additional 1d12 force damage.</property>
+            <property name="Ethereal Maneuverability">Allows casting of blink or dimension door once per dawn. Casting blink allows the wielder to see and attack into the Ethereal Plane.</property>
+            <spell name="blink" level="3" recharge="dawn"/>
+            <spell name="dimension door" level="4" recharge="dawn"/>
+        </Item>
+    </Items>
+</Compendium>
